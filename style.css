@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+    background-color: dodgerblue;
+    animation-name: go;
+    animation-duration: 10s;
+}
+
+@keyframes go{
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(300px);
+    }
+    20%{
+        transform: translateX(300px) translateY(300px) ;
+    }
+    30%{
+        transform: translateY(300px) translateX(1000px);
+    }
+    40%{
+        transform: translateX(1000px) translateY(700px);
+    }
+    50%{
+        transform: translateY(700px) translateX(600px);
+    }
+    60%{
+        transform: translateX(600px) translateY(500px);
+    }
+    70%{
+        transform: translateY(500px) translateX(300px);
+    }
+    80%{
+        transform: translateY(300px) translateX(150px);
+    }
+    90%{
+        transform: translateX(0) translateY(300px);
+    }
+    100%{
+        transform: translateX(0) ;
+    }
+}
